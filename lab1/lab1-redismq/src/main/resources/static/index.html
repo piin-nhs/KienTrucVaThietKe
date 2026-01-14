@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot Redis Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #chat-box {
+            height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background: #f9f9f9;
+        }
+        .message { margin-bottom: 5px; padding: 5px 10px; border-radius: 5px; background: #e9ecef; }
+    </style>
+</head>
+<body class="container mt-4">
+
+<h2 class="text-center">REDIS CHAT ROOM</h2>
+
+<div id="chat-box" class="mb-3"></div>
+
+<div class="input-group">
+    <input type="text" id="messageInput" class="form-control" placeholder="Nhập tin nhắn...">
+    <button onclick="sendMessage()" class="btn btn-primary">Gửi</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.1/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+
+<script>
+    var stompClient = null;
+
+    function connect() {
+        var socket = new SockJS('/ws'); // Kết nối vào endpoint đã cấu hình ở Java
+        stompClient = Stomp.over(socket);
+
+        stompClient.connect({}, function (frame) {
+            console.log('Đã kết nối: ' + frame);
+
+            // Đăng ký lắng nghe kênh "/topic/chat"
+            stompClient.subscribe('/topic/chat', function (message) {
+                showMessage(message.body);
+            });
+        });
+    }
+
+    function sendMessage() {
+        var messageContent = document.getElementById("messageInput").value;
+        if(messageContent.trim() === "") return;
+
+        // Gọi API gửi tin (API này sẽ đẩy vào Redis -> Redis đẩy lại về đây)
+        fetch('/send?msg=' + encodeURIComponent(messageContent))
+            .then(response => {
+                console.log("Đã gửi lên Server");
+                document.getElementById("messageInput").value = ""; // Xóa ô nhập
+            });
+    }
+
+    function showMessage(message) {
+        var chatBox = document.getElementById("chat-box");
+        var newMessage = document.createElement("div");
+        newMessage.className = "message";
+        newMessage.innerText = message;
+        chatBox.appendChild(newMessage);
+
+        // Tự động cuộn xuống dưới cùng
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    // Tự động kết nối khi mở trang
+    connect();
+
+    // Cho phép ấn Enter để gửi
+    document.getElementById("messageInput").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") sendMessage();
+    });
+</script>
+</body>
+</html>
