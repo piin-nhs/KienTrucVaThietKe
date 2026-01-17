@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login JWT & Refresh Token</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #4f46e5;
+            --primary-hover: #4338ca;
+            --success-color: #10b981;
+            --success-hover: #059669;
+            --warning-color: #f59e0b;
+            --warning-hover: #d97706;
+            --danger-color: #ef4444;
+            --danger-hover: #dc2626;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-color: #1f2937;
+            --text-muted: #6b7280;
+            --code-bg: #1e293b;
+            --code-text: #e2e8f0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h2, h3, h4 { margin-bottom: 10px; color: #111827; }
+        h2 { text-align: center; margin-bottom: 30px; color: var(--primary-color); }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .box {
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .hidden { display: none; }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 16px;
+            margin: 8px 0 20px 0;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--primary-color);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: transform 0.1s, box-shadow 0.2s, background-color 0.2s;
+            flex: 1;
+            white-space: nowrap;
+        }
+
+        button:active { transform: translateY(1px); }
+
+        .btn-login { background-color: var(--primary-color); color: white; width: 100%; font-size: 16px; padding: 12px; }
+        .btn-login:hover { background-color: var(--primary-hover); }
+
+        .btn-api { background-color: var(--success-color); color: white; }
+        .btn-api:hover { background-color: var(--success-hover); }
+
+        .btn-refresh { background-color: var(--warning-color); color: white; }
+        .btn-refresh:hover { background-color: var(--warning-hover); }
+
+        .btn-logout { background-color: var(--card-bg); color: var(--danger-color); border: 2px solid var(--danger-color); }
+        .btn-logout:hover { background-color: var(--danger-color); color: white; }
+
+        h4 { margin-top: 20px; font-size: 0.9rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+        pre {
+            background-color: var(--code-bg);
+            color: var(--code-text);
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 13px;
+            overflow-x: auto;
+            border: 1px solid #334155;
+            position: relative;
+        }
+
+        .token-box {
+            max-height: 120px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        pre::-webkit-scrollbar { width: 8px; height: 8px; }
+        pre::-webkit-scrollbar-track { background: #0f172a; }
+        pre::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .box { animation: fadeIn 0.4s ease-out; }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>AUTHENTICATION</h2>
+
+    <div id="loginSection" class="box">
+        <h3>Đăng nhập</h3>
+        <p style="color: #6b7280; margin-bottom: 15px; font-size: 14px;">Nhập tên người dùng để lấy Token.</p>
+        <input type="text" id="username" placeholder="Nhập username " />
+        <button onclick="handleLogin()" class="btn-login">Đăng nhập</button>
+    </div>
+
+    <div id="dashboardSection" class="box hidden">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h3>Dashboard</h3>
+            <span style="background: #e0e7ff; color: #4338ca; padding: 5px 10px; border-radius: 20px; font-size: 13px; font-weight: 600;">
+                User: <span id="displayUser">...</span>
+            </span>
+        </div>
+
+        <div class="btn-group">
+            <button onclick="callProtectedApi()" class="btn-api">Test Access Token (API)</button>
+            <button onclick="handleRefreshToken()" class="btn-refresh">Refresh Access Token</button>
+            <button onclick="handleLogout()" class="btn-logout">Thoát</button>
+        </div>
+
+        <h4>Kết quả API (/api/profile):</h4>
+        <pre id="apiResult" style="color: #4ade80;">Chưa gọi API...</pre>
+
+        <h4>Access Token (5 phút):</h4>
+        <pre id="tokenDisplay" class="token-box" style="color: #60a5fa;"></pre>
+
+        <h4>Refresh Token (24 giờ):</h4>
+        <pre id="refreshTokenDisplay" class="token-box" style="color: #fbbf24;"></pre>
+    </div>
+</div>
+
+<script>
+    window.onload = function() {
+        const accessToken = localStorage.getItem('accessToken');
+        const refreshToken = localStorage.getItem('refreshToken');
+
+        if (accessToken && refreshToken) {
+            showDashboard(accessToken, refreshToken);
+        }
+    };
+
+    async function handleLogin() {
+        const username = document.getElementById('username').value;
+        if (!username) return alert("Vui lòng nhập username!");
+
+        try {
+            const response = await fetch(`http://localhost:8080/auth/login?username=${username}`, {
+                method: 'POST'
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                localStorage.setItem('accessToken', data.accessToken);
+                localStorage.setItem('refreshToken', data.refreshToken);
+                showDashboard(data.accessToken, data.refreshToken);
+            } else {
+                alert("Đăng nhập thất bại!");
+            }
+        } catch (error) {
+            console.error(error);
+            alert("Lỗi kết nối đến Server!");
+        }
+    }
+
+    async function callProtectedApi() {
+        const token = localStorage.getItem('accessToken');
+        document.getElementById('apiResult').innerText = "Đang gọi API...";
+
+        try {
+            const response = await fetch('http://localhost:8080/api/profile', {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                document.getElementById('apiResult').innerText = JSON.stringify(data, null, 2);
+                if(data.username) document.getElementById('displayUser').innerText = data.username;
+            } else {
+                document.getElementById('apiResult').innerText = "Lỗi 401: Token hết hạn!";
+            }
+        } catch (error) {
+            document.getElementById('apiResult').innerText = "Lỗi kết nối!";
+        }
+    }
+
+    async function handleRefreshToken() {
+        const refreshToken = localStorage.getItem('refreshToken');
+        if (!refreshToken) {
+            alert("Không có Refresh Token! Vui lòng đăng nhập lại.");
+            handleLogout();
+            return;
+        }
+
+        try {
+            console.log("Đang gửi Refresh Token lên server...");
+            const response = await fetch('http://localhost:8080/auth/refresh-token', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    refreshToken: refreshToken
+                })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+
+                localStorage.setItem('accessToken', data.accessToken);
+                document.getElementById('tokenDisplay').innerText = data.accessToken;
+
+                document.getElementById('apiResult').innerText = " Đã cấp lại Token thành công! Đang thử gọi lại API...";
+                callProtectedApi();
+
+            } else {
+                alert("Refresh Token đã hết hạn (hoặc không hợp lệ). Vui lòng đăng nhập lại!");
+                handleLogout();
+            }
+        } catch (error) {
+            console.error(error);
+            alert("Lỗi kết nối đến Server khi refresh token!");
+        }
+    }
+
+    function showDashboard(accessToken, refreshToken) {
+        document.getElementById('loginSection').classList.add('hidden');
+        document.getElementById('dashboardSection').classList.remove('hidden');
+        document.getElementById('tokenDisplay').innerText = accessToken;
+        document.getElementById('refreshTokenDisplay').innerText = refreshToken;
+
+        callProtectedApi();
+    }
+
+    function handleLogout() {
+        localStorage.removeItem('accessToken');
+        localStorage.removeItem('refreshToken');
+        location.reload();
+    }
+</script>
+</body>
+</html>
