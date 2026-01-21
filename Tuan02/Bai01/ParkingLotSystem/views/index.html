@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Parking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="controls">
+    <h2 style="color: #f1c40f; text-shadow: 2px 2px #000; margin: 0 0 10px 0;">AUTO PARKING SYSTEM</h2>
+    <button id="btnPark" class="btn-start" onclick="goiJavaChoXeVao()">GET TICKET & PARK</button>
+</div>
+
+<div class="game-area" id="gameArea">
+    <div class="road-strip"></div>
+
+    <div class="gate-zone entry-gate"><div class="gate-label">ENTRY</div></div>
+
+    <div class="parking-row top-row">
+        <div class="slot" data-id="0" data-label="01"></div>
+        <div class="slot" data-id="1" data-label="02"></div>
+        <div class="slot" data-id="2" data-label="03"></div>
+        <div class="slot" data-id="3" data-label="04"></div>
+        <div class="slot" data-id="4" data-label="05"></div>
+        <div class="slot" data-id="5" data-label="06"></div>
+    </div>
+
+    <div class="parking-row bottom-row">
+        <div class="slot" data-id="6" data-label="07"></div>
+        <div class="slot" data-id="7" data-label="08"></div>
+        <div class="slot" data-id="8" data-label="09"></div>
+        <div class="slot" data-id="9" data-label="10"></div>
+        <div class="slot" data-id="10" data-label="11"></div>
+        <div class="slot" data-id="11" data-label="12"></div>
+    </div>
+
+    <div class="gate-zone exit-gate"><div class="gate-label">EXIT</div></div>
+</div>
+
+<script>
+    const IMG_SUPER_CAR = "../images/supercar.png";
+    const IMG_MOTO = "../images/moto.png";
+    const IMG_BIKE = "../images/bike.png";
+    const IMG_TRUCK = "../images/truck.png";
+    const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+    let currentCars = 1;
+
+    function goiJavaChoXeVao() {
+        if(currentCars > 12) {
+            currentCars = 12;
+        }
+
+        const btn = document.getElementById('btnPark');
+
+        fetch('http://localhost:8080/enter')
+            .then(res => res.json())
+            .then(data => {
+                if (data.status === "full") {
+                    btn.innerText = "FULL PARKING LOT";
+                    btn.disabled = true;
+                }
+                else {
+                    currentCars++;
+
+                    animateCarEntry(data.slot, data.vehicle);
+
+                    if (currentCars === 12) {
+                        goiJavaChoXeVao();
+                    }
+                }
+            })
+            .catch(err => console.error(err));
+    }
+
+    async function animateCarEntry(slotIndex, vehicle) {
+        const car = document.createElement('div');
+        car.className = 'car-container';
+
+        let imgSrc = IMG_BIKE;
+        if (vehicle.type === "SUPER_CAR") imgSrc = IMG_SUPER_CAR;
+        else if (vehicle.type === "MOTOCYCLE") imgSrc = IMG_MOTO;
+        else if (vehicle.type === "TRUCK") imgSrc = IMG_TRUCK;
+
+        car.innerHTML = `
+                <img src="${imgSrc}" class="car-img">
+                <div class="plate-tag">${vehicle.plate}</div>
+            `;
+        document.getElementById('gameArea').appendChild(car);
+
+        const slotEl = document.querySelector(`.slot[data-id='${slotIndex}']`);
+        const gameRect = document.getElementById('gameArea').getBoundingClientRect();
+        const slotRect = slotEl.getBoundingClientRect();
+        const carWidth = 140;
+        const carHeight = 120;
+
+        const targetX = (slotRect.left - gameRect.left) + (slotRect.width / 2) - (carWidth / 2);
+
+        const isTopRow = slotIndex < 6;
+        const targetY = (slotRect.top - gameRect.top) + (slotRect.height - carHeight) / 2;
+
+
+        car.style.transform = `rotate(90deg)`;
+        car.style.left = '-100px';
+        car.style.top = '220px';
+
+        await wait(50);
+
+        car.style.transition = 'left 1.2s linear';
+        car.style.left = targetX + 'px';
+
+        await wait(1200);
+
+
+        const finalRotation = isTopRow ? '0deg' : '180deg';
+
+        car.style.transition = 'all 0.6s ease-out';
+        car.style.transform = `rotate(${finalRotation})`;
+        car.style.top = targetY + 'px';
+
+        car.onclick = () => animateCarExit(slotIndex, car);
+    }
+
+    async function animateCarExit(slotIndex, carDiv) {
+        carDiv.onclick = null;
+        carDiv.style.pointerEvents = 'none'
+
+        fetch('http://localhost:8080/exit?slot=' + slotIndex);
+
+        currentCars--;
+
+        const btn = document.getElementById('btnPark');
+        if (btn.disabled) {
+            btn.innerText = "GET TICKET & PARK";
+            btn.disabled = false;
+        }
+
+        carDiv.style.transition = 'top 0.6s ease-in';
+        carDiv.style.top = '220px';
+
+        await wait(600);
+
+        carDiv.style.transition = 'transform 0.4s linear';
+        carDiv.style.transform = 'rotate(90deg)';
+
+        await wait(400);
+
+        carDiv.style.transition = 'left 1.0s linear';
+        carDiv.style.left = '1300px';
+
+        await wait(1000);
+        carDiv.remove();
+    }
+</script>
+</body>
+</html>
