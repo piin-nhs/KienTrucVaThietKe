@@ -4,11 +4,17 @@ import iuh.fit.payment.dto.PaymentRequest;
 import iuh.fit.payment.model.Payment;
 import iuh.fit.payment.repository.PaymentRepository;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class PaymentService {
@@ -24,16 +30,25 @@ public class PaymentService {
         this.restTemplate = restTemplate;
     }
 
-    public Payment processPayment(PaymentRequest request) {
+    public Payment processPayment(PaymentRequest request, String token) {
         try {
             String updateOrderEndpoint = orderServiceUrl + "/api/orders/"
                     + request.getOrderId() + "/status";
 
-            restTemplate.put(updateOrderEndpoint, "PAID");
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_JSON);
+            headers.set("Authorization", token);
+
+            Map<String, String> body = new HashMap<>();
+            body.put("status", "COMPLETED");
+
+            HttpEntity<Map<String, String>> entity = new HttpEntity<>(body, headers);
+
+            restTemplate.exchange(updateOrderEndpoint, HttpMethod.PUT, entity, Void.class);
 
             Payment payment = new Payment();
             payment.setOrderId(request.getOrderId());
-            payment.setUsername(request.getUsername());
             payment.setPaymentMethod(request.getPaymentMethod());
             payment.setAmount(request.getAmount());
             payment.setStatus("SUCCESS");

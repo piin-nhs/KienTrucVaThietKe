@@ -20,9 +20,8 @@ public class PaymentController {
     }
 
     @PostMapping
-    public ResponseEntity<Payment> createPayment(@RequestBody PaymentRequest request) {
-        Payment result = paymentService.processPayment(request);
-        return ResponseEntity.ok(result);
+    public ResponseEntity<Payment> createPayment(@RequestBody PaymentRequest request, @RequestHeader("Authorization") String token) {
+        return ResponseEntity.ok(paymentService.processPayment(request, token));
     }
 
 

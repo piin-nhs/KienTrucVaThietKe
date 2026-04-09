@@ -11,7 +11,6 @@ public class Payment {
     @Id
     private String id;
     private String orderId;
-    private String username;
     private String paymentMethod;
     private Double amount;
     private String status;
