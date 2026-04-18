@@ -1,0 +1,418 @@
+2026-04-15 13:30:10 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:30:13 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:31:46 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:31:48 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:32:00 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:32:03 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:32:26 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:32:29 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:32:56 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:32:58 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:34:55 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:34:57 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:34:58 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:35:00 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:35:20 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #290 từ User A
+2026-04-15 13:35:22 [info]: [PAYMENT] ✅ Thanh toán THÀNH CÔNG cho Booking #290
+2026-04-15 13:35:22 [info]: [NOTIFICATION] 🔔 User A đã đặt đơn #290 thành công!
+2026-04-15 13:36:36 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #115 từ User A
+2026-04-15 13:36:39 [info]: [PAYMENT] ✅ Thanh toán THÀNH CÔNG cho Booking #115
+2026-04-15 13:36:39 [info]: [NOTIFICATION] 🔔 User A đã đặt đơn #115 thành công!
+2026-04-15 13:36:41 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #282 từ User A
+2026-04-15 13:36:43 [info]: [PAYMENT] ✅ Thanh toán THÀNH CÔNG cho Booking #282
+2026-04-15 13:36:43 [info]: [NOTIFICATION] 🔔 User A đã đặt đơn #282 thành công!
+2026-04-15 13:37:04 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:37:06 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:37:12 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #646 từ User A
+2026-04-15 13:37:14 [info]: [PAYMENT] ✅ Thanh toán THÀNH CÔNG cho Booking #646
+2026-04-15 13:37:14 [info]: [NOTIFICATION] 🔔 User A đã đặt đơn #646 thành công!
+2026-04-15 13:37:16 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #267 từ User A
+2026-04-15 13:37:18 [warn]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #267
+2026-04-15 13:37:18 [info]: [NOTIFICATION] 🔕 Rất tiếc, thanh toán cho đơn #267 của User A đã thất bại.
+2026-04-15 13:37:19 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #93 từ User A
+2026-04-15 13:37:21 [info]: [PAYMENT] ✅ Thanh toán THÀNH CÔNG cho Booking #93
+2026-04-15 13:37:21 [info]: [NOTIFICATION] 🔔 User A đã đặt đơn #93 thành công!
+2026-04-15 13:38:17 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:38:20 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:38:40 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #278 từ User A
+2026-04-15 13:38:42 [error]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #278
+2026-04-15 13:38:43 [error]: [NOTIFICATION] 🔕 Thanh toán cho đơn #278 của User A đã thất bại.
+2026-04-15 13:38:44 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #58 từ User A
+2026-04-15 13:38:46 [error]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #58
+2026-04-15 13:38:47 [error]: [NOTIFICATION] 🔕 Thanh toán cho đơn #58 của User A đã thất bại.
+2026-04-15 13:38:47 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #417 từ User A
+2026-04-15 13:38:49 [error]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #417
+2026-04-15 13:38:49 [error]: [NOTIFICATION] 🔕 Thanh toán cho đơn #417 của User A đã thất bại.
+2026-04-15 13:41:00 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:41:03 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:41:20 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:41:22 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:41:23 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:41:25 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:41:26 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:41:28 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:41:30 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:41:33 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:41:34 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:41:37 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:41:37 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:41:39 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:41:41 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:52:11 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #876 từ User A
+2026-04-15 13:52:13 [error]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #876
+2026-04-15 13:52:13 [error]: [NOTIFICATION] 🔕 Thanh toán cho đơn #876 của User A đã thất bại.
+2026-04-15 13:52:27 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #901 từ User A
+2026-04-15 13:52:29 [info]: [PAYMENT] ✅ Thanh toán THÀNH CÔNG cho Booking #901
+2026-04-15 13:52:29 [info]: [NOTIFICATION] 🔔 User A đã đặt đơn #901 thành công!
+2026-04-15 13:59:08 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:59:11 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:59:14 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:59:18 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 13:59:25 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:59:27 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 13:59:29 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 14:10:00 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:10:02 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 14:10:04 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:10:06 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 14:10:09 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:10:12 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 14:10:12 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:10:14 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 14:10:18 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:10:20 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 14:10:37 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #306 từ User A
+2026-04-15 14:10:39 [error]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #306
+2026-04-15 14:10:39 [error]: [NOTIFICATION] 🔕 Thanh toán cho đơn #306 của User A đã thất bại.
+2026-04-15 14:10:43 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #971 từ User A
+2026-04-15 14:10:45 [info]: [PAYMENT] ✅ Thanh toán THÀNH CÔNG cho Booking #971
+2026-04-15 14:10:45 [info]: [NOTIFICATION] 🔔 User A đã đặt đơn #971 thành công!
+2026-04-15 14:10:46 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #192 từ User A
+2026-04-15 14:10:48 [error]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #192
+2026-04-15 14:10:48 [error]: [NOTIFICATION] 🔕 Thanh toán cho đơn #192 của User A đã thất bại.
+2026-04-15 14:22:03 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:22:07 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 14:22:14 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:22:16 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 14:22:18 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:22:20 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:22:25 [info]: 🚀 Service 5 (Payment + Notification) đã kết nối và đang chờ message...
+2026-04-15 14:27:37 [info]: ⏳ Đang kết nối tới MongoDB...
+2026-04-15 14:27:41 [info]: 🍃 Đã kết nối thành công tới MongoDB Atlas
+2026-04-15 14:27:41 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:27:43 [info]: 🚀 Service 5 đã kết nối RabbitMQ và đang chờ message...
+2026-04-15 14:27:43 [info]: 🌐 HTTP Server đang chạy tại http://localhost:8084
+2026-04-15 14:27:59 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #47 từ User A
+2026-04-15 14:28:02 [info]: [DATABASE] 💾 Đã lưu lịch sử thanh toán #47 vào MongoDB
+2026-04-15 14:28:02 [warn]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #47
+2026-04-15 14:28:02 [error]: [NOTIFICATION] 🔕 Rất tiếc, thanh toán đơn #47 của User A thất bại. Lỗi: Ngân hàng từ chối giao dịch
+2026-04-15 14:28:25 [info]: ⏳ Đang kết nối tới MongoDB...
+2026-04-15 14:28:26 [info]: 🍃 Đã kết nối thành công tới MongoDB Atlas
+2026-04-15 14:28:26 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:28:29 [info]: 🚀 Service 5 đã kết nối RabbitMQ và đang chờ message...
+2026-04-15 14:28:29 [info]: 🌐 HTTP Server đang chạy tại http://localhost:8084
+2026-04-15 14:28:30 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #42 từ User A
+2026-04-15 14:28:32 [info]: [DATABASE] 💾 Đã lưu lịch sử thanh toán #42 vào MongoDB
+2026-04-15 14:28:32 [error]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #42
+2026-04-15 14:28:32 [error]: [NOTIFICATION] 🔕 Rất tiếc, thanh toán đơn #42 của User A thất bại. Lỗi: Ngân hàng từ chối giao dịch
+2026-04-15 14:28:45 [info]: ⏳ Đang kết nối tới MongoDB...
+2026-04-15 14:28:50 [info]: ⏳ Đang kết nối tới MongoDB...
+2026-04-15 14:28:51 [info]: 🍃 Đã kết nối thành công tới MongoDB Atlas
+2026-04-15 14:28:51 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:28:53 [info]: 🚀 Service 5 đã kết nối RabbitMQ và đang chờ message...
+2026-04-15 14:28:53 [info]: 🌐 HTTP Server đang chạy tại http://localhost:8084
+2026-04-15 14:29:21 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #461 từ User A
+2026-04-15 14:29:24 [info]: [DATABASE] 💾 Đã lưu lịch sử thanh toán #461 vào MongoDB
+2026-04-15 14:29:24 [info]: [PAYMENT] ✅ Thanh toán THÀNH CÔNG cho Booking #461
+2026-04-15 14:29:24 [info]: [NOTIFICATION] 🔔 User A đã đặt đơn #461 thành công! (Mã GD: TXN-1776238163907)
+2026-04-15 14:29:25 [info]: [PAYMENT] 📥 Nhận yêu cầu thanh toán cho Booking #88 từ User A
+2026-04-15 14:29:27 [info]: [DATABASE] 💾 Đã lưu lịch sử thanh toán #88 vào MongoDB
+2026-04-15 14:29:27 [info]: [PAYMENT] ✅ Thanh toán THÀNH CÔNG cho Booking #88
+2026-04-15 14:29:27 [info]: [NOTIFICATION] 🔔 User A đã đặt đơn #88 thành công! (Mã GD: TXN-1776238167154)
+2026-04-15 14:34:08 [info]: ⏳ Đang kết nối tới MongoDB...
+2026-04-15 14:34:11 [info]: ⏳ Đang kết nối tới MongoDB...
+2026-04-15 14:34:12 [info]: 🍃 Đã kết nối thành công tới MongoDB Atlas
+2026-04-15 14:34:12 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:34:16 [info]: 🚀 Service 5 đã kết nối RabbitMQ và đang chờ message...
+2026-04-15 14:34:16 [info]: 🌐 HTTP Server đang chạy tại http://localhost:8084
+2026-04-15 14:34:17 [info]: ⏳ Đang kết nối tới MongoDB...
+2026-04-15 14:34:20 [info]: 🍃 Đã kết nối thành công tới MongoDB Atlas
+2026-04-15 14:34:20 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:34:21 [info]: ⏳ Đang kết nối tới MongoDB...
+2026-04-15 14:34:22 [info]: 🍃 Đã kết nối thành công tới MongoDB Atlas
+2026-04-15 14:34:22 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:34:25 [info]: 🚀 Service 5 đã kết nối RabbitMQ và đang chờ message...
+2026-04-15 14:34:25 [info]: 🌐 HTTP Server đang chạy tại http://localhost:8084
+2026-04-15 14:34:40 [info]: ⏳ Đang kết nối tới MongoDB...
+2026-04-15 14:34:41 [info]: 🍃 Đã kết nối thành công tới MongoDB Atlas
+2026-04-15 14:34:41 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:34:43 [info]: ⏳ Đang kết nối tới MongoDB...
+2026-04-15 14:34:44 [info]: 🍃 Đã kết nối thành công tới MongoDB Atlas
+2026-04-15 14:34:44 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:34:46 [info]: 🚀 Service 5 đã kết nối RabbitMQ và đang chờ message...
+2026-04-15 14:34:46 [info]: 🌐 HTTP Server đang chạy tại http://localhost:8084
+2026-04-15 14:34:56 [info]: ⏳ Đang kết nối tới MongoDB...
+2026-04-15 14:34:58 [info]: 🍃 Đã kết nối thành công tới MongoDB Atlas
+2026-04-15 14:34:58 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:34:59 [info]: ⏳ Đang kết nối tới MongoDB...
+2026-04-15 14:35:00 [info]: 🍃 Đã kết nối thành công tới MongoDB Atlas
+2026-04-15 14:35:00 [info]: ⏳ Đang kết nối tới RabbitMQ Cloud...
+2026-04-15 14:35:03 [info]: 🚀 Service 5 đã kết nối RabbitMQ và đang chờ message...
+2026-04-15 14:35:03 [info]: 🌐 HTTP Server đang chạy tại http://localhost:8084
+2026-04-15 14:37:59 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-15 14:38:05 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-15 14:38:07 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-15 14:38:07 [info]: 🌐 Server đang chạy tại http://localhost:8084
+2026-04-15 14:38:17 [info]: [CONSUMER] 📥 Nhận đơn #481
+2026-04-15 14:38:19 [info]: [DATABASE] 💾 Lưu lịch sử giao dịch #481
+2026-04-15 14:39:14 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-15 14:39:16 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-15 14:39:17 [info]: 🌐 Server đang chạy tại http://localhost:8084
+2026-04-15 14:39:52 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-15 14:39:54 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-15 14:39:54 [info]: 🌐 Server đang chạy tại http://localhost:8084
+2026-04-15 14:40:33 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-15 14:40:34 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-15 14:40:35 [info]: 🌐 Server đang chạy tại http://localhost:8084
+2026-04-15 14:41:39 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-15 14:41:41 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-15 14:41:41 [info]: 🌐 Server đang chạy tại http://localhost:8084
+2026-04-15 14:43:24 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-15 14:43:25 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-15 14:43:25 [info]: 🌐 Server đang chạy tại http://localhost:8084
+2026-04-18 12:58:41 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 12:58:43 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 12:58:43 [info]: 🌐 Server đang chạy tại http://localhost:8084
+2026-04-18 12:59:01 [info]: [CONSUMER] 📥 Nhận đơn #780
+2026-04-18 12:59:03 [info]: [DATABASE] 💾 Lưu lịch sử giao dịch #780
+2026-04-18 12:59:22 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 12:59:24 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 12:59:26 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 12:59:27 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 12:59:27 [info]: 🌐 Server đang chạy tại http://localhost:8084
+2026-04-18 12:59:31 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 12:59:32 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 12:59:32 [info]: 🌐 Server đang chạy tại http://localhost:8084
+2026-04-18 12:59:34 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 12:59:35 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 12:59:35 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:00:38 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:00:40 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:00:40 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:00:42 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:00:44 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:00:45 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:00:45 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:00:47 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:00:48 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:00:48 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:00:54 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:00:56 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:00:57 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:00:58 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:01:00 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:01:01 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:01:01 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:01:04 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:01:05 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:01:05 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:01:28 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:01:30 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:01:30 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:01:32 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:01:33 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:01:35 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:01:35 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:01:43 [info]: [CONSUMER] 📥 Nhận đơn #757
+2026-04-18 13:01:45 [info]: [DATABASE] Lưu lịch sử giao dịch #757
+2026-04-18 13:01:54 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:01:55 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:01:55 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:01:57 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:01:58 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:01:58 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:02:08 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:09 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:02:10 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:11 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:02:11 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:02:13 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:15 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:17 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:18 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:02:18 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:02:20 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:21 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:02:21 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:02:23 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:24 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:02:24 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:02:25 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:27 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:28 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:02:28 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:02:29 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:31 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:32 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:33 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:02:34 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:02:38 [info]: 🍃 MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:39 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:02:39 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:02:41 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:42 [info]: 🐰 RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:02:42 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:02:47 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:49 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:02:50 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:02:50 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:02:58 [info]: [CONSUMER] Nhận đơn #502
+2026-04-18 13:03:00 [info]: [DATABASE] Lưu lịch sử giao dịch #502
+2026-04-18 13:04:09 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:04:10 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:04:11 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:04:15 [info]: [CONSUMER] Nhận đơn #507
+2026-04-18 13:04:17 [info]: [DATABASE] Lưu lịch sử giao dịch #507
+2026-04-18 13:04:30 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:04:31 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:04:31 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:04:31 [info]: [CONSUMER] Nhận đơn #507
+2026-04-18 13:04:33 [info]: [DATABASE] Lưu lịch sử giao dịch #507
+2026-04-18 13:06:48 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:06:50 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:06:50 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:09:07 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:09:08 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:09:09 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:09:10 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:09:12 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:09:14 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:09:15 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:09:15 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:09:31 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:09:32 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:09:32 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:09:51 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:09:52 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:09:52 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:09:59 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:10:00 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:10:00 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:10:47 [info]: [CONSUMER] Nhận đơn #359
+2026-04-18 13:10:49 [info]: [DATABASE] Lưu lịch sử giao dịch #359
+2026-04-18 13:19:34 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:19:35 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:19:35 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:19:46 [info]: [CONSUMER] Nhận đơn #278
+2026-04-18 13:19:49 [info]: [DATABASE] Lưu lịch sử giao dịch #278
+2026-04-18 13:21:15 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:21:16 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:21:16 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:21:47 [info]: [CONSUMER] Nhận đơn #682
+2026-04-18 13:21:49 [info]: [DATABASE] Lưu lịch sử giao dịch #682
+2026-04-18 13:22:17 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:22:18 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:22:19 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:22:19 [error]: Không thể khởi động hệ thống
+2026-04-18 13:22:24 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:22:25 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:22:27 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:22:28 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:22:29 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:22:30 [info]: [NOTIFICATION] User A đã đặt đơn #780 thành công! (Mã GD: TXN-1776491943059)
+2026-04-18 13:22:30 [info]: [NOTIFICATION] User A đã đặt đơn #780 thành công! (Mã GD: TXN-1776491943059)
+2026-04-18 13:22:30 [info]: [NOTIFICATION] User A đã đặt đơn #757 thành công! (Mã GD: TXN-1776492105848)
+2026-04-18 13:22:30 [info]: [NOTIFICATION] User A đã đặt đơn #757 thành công! (Mã GD: TXN-1776492105848)
+2026-04-18 13:22:30 [info]: [NOTIFICATION] User A đã đặt đơn #502 thành công! (Mã GD: TXN-1776492180896)
+2026-04-18 13:22:30 [info]: [NOTIFICATION] User A đã đặt đơn #502 thành công! (Mã GD: TXN-1776492180896)
+2026-04-18 13:22:30 [info]: [NOTIFICATION] User A đã đặt đơn #507 thành công! (Mã GD: TXN-1776492273699)
+2026-04-18 13:22:30 [info]: [NOTIFICATION] User A đã đặt đơn #507 thành công! (Mã GD: TXN-1776492273699)
+2026-04-18 13:22:30 [info]: [NOTIFICATION] User A đã đặt đơn #359 thành công! (Mã GD: TXN-1776492649653)
+2026-04-18 13:22:30 [info]: [NOTIFICATION] User A đã đặt đơn #359 thành công! (Mã GD: TXN-1776492649653)
+2026-04-18 13:22:30 [info]: [NOTIFICATION] User A đã đặt đơn #278 thành công! (Mã GD: TXN-1776493188948)
+2026-04-18 13:22:30 [info]: [NOTIFICATION] User A đã đặt đơn #278 thành công! (Mã GD: TXN-1776493188948)
+2026-04-18 13:22:30 [info]: [NOTIFICATION] User A đã đặt đơn #682 thành công! (Mã GD: TXN-1776493309231)
+2026-04-18 13:22:30 [info]: [NOTIFICATION] User A đã đặt đơn #682 thành công! (Mã GD: TXN-1776493309231)
+2026-04-18 13:22:30 [error]: [NOTIFICATION] Rất tiếc, thanh toán đơn #481 của User A thất bại. Lỗi: Ngân hàng từ chối giao dịch
+2026-04-18 13:22:30 [error]: [NOTIFICATION] Rất tiếc, thanh toán đơn #481 của User A thất bại. Lỗi: Ngân hàng từ chối giao dịch
+2026-04-18 13:22:32 [info]: [CONSUMER] Nhận đơn #104
+2026-04-18 13:22:34 [info]: [DATABASE] Lưu lịch sử giao dịch #104
+2026-04-18 13:22:34 [info]: [NOTIFICATION] User A đã đặt đơn #104 thành công! (Mã GD: TXN-1776493354219)
+2026-04-18 13:22:34 [info]: [NOTIFICATION] User A đã đặt đơn #104 thành công! (Mã GD: TXN-1776493354219)
+2026-04-18 13:22:41 [info]: [CONSUMER] Nhận đơn #589
+2026-04-18 13:22:43 [info]: [DATABASE] Lưu lịch sử giao dịch #589
+2026-04-18 13:22:43 [info]: [NOTIFICATION] User A đã đặt đơn #589 thành công! (Mã GD: TXN-1776493363637)
+2026-04-18 13:22:43 [info]: [NOTIFICATION] User A đã đặt đơn #589 thành công! (Mã GD: TXN-1776493363637)
+2026-04-18 13:23:03 [info]: [CONSUMER] Nhận đơn #126
+2026-04-18 13:23:05 [info]: [DATABASE] Lưu lịch sử giao dịch #126
+2026-04-18 13:23:05 [info]: [NOTIFICATION] User A đã đặt đơn #126 thành công! (Mã GD: TXN-1776493385487)
+2026-04-18 13:23:05 [info]: [NOTIFICATION] User A đã đặt đơn #126 thành công! (Mã GD: TXN-1776493385487)
+2026-04-18 13:23:09 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:23:10 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:23:11 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:23:15 [info]: [CONSUMER] Nhận đơn #411
+2026-04-18 13:23:17 [info]: [DATABASE] Lưu lịch sử giao dịch #411
+2026-04-18 13:23:17 [info]: [NOTIFICATION] User A đã đặt đơn #411 thành công! (Mã GD: TXN-1776493397741)
+2026-04-18 13:23:17 [info]: [NOTIFICATION] User A đã đặt đơn #411 thành công! (Mã GD: TXN-1776493397741)
+2026-04-18 13:24:39 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:24:40 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:24:41 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:24:45 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:24:46 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:24:46 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:24:51 [info]: [CONSUMER] Nhận đơn #929
+2026-04-18 13:24:53 [info]: [DATABASE] Lưu lịch sử giao dịch #929
+2026-04-18 13:24:53 [info]: [NOTIFICATION] User A đã đặt đơn #929 thành công! (Mã GD: TXN-1776493493730)
+2026-04-18 13:25:32 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:25:33 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:25:34 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:25:38 [info]: [CONSUMER] Nhận đơn #223
+2026-04-18 13:25:40 [info]: [DATABASE] Lưu lịch sử giao dịch #223
+2026-04-18 13:25:40 [info]: [NOTIFICATION] User A đã đặt đơn #223 thành công! (Mã GD: TXN-1776493540517)
+2026-04-18 13:25:48 [info]: [CONSUMER] Nhận đơn #603
+2026-04-18 13:25:50 [info]: [DATABASE] Lưu lịch sử giao dịch #603
+2026-04-18 13:25:50 [info]: [NOTIFICATION] User A đã đặt đơn #603 thành công! (Mã GD: TXN-1776493550052)
+2026-04-18 13:25:52 [info]: [CONSUMER] Nhận đơn #201
+2026-04-18 13:25:54 [info]: [DATABASE] Lưu lịch sử giao dịch #201
+2026-04-18 13:25:54 [error]: [NOTIFICATION] Rất tiếc, thanh toán đơn #201 của User A thất bại. Lỗi: Lỗi giao dịch
+2026-04-18 13:28:56 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:28:57 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:28:58 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:28:59 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:29:00 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:29:54 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:29:56 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:29:57 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:29:58 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:29:59 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:30:38 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:30:39 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:30:40 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:30:42 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:30:44 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:30:45 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:30:46 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:30:47 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:31:15 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:36:56 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:36:59 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:37:01 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:37:01 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:38:11 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:38:13 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:38:14 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:38:15 [error]: Không thể khởi động hệ thống
+2026-04-18 13:38:17 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:38:18 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:38:19 [error]: Không thể khởi động hệ thống
+2026-04-18 13:38:53 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:38:55 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-18 13:38:56 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-18 13:38:57 [info]: Server đang chạy tại http://localhost:8084
+2026-04-18 13:42:34 [info]: [SOCKET] Client connected: 7D_scn7AjnKkIYO6AAAB
+2026-04-18 13:42:43 [info]: [CONSUMER] Nhận đơn #652
+2026-04-18 13:42:45 [info]: [DATABASE] Lưu lịch sử giao dịch #652
+2026-04-18 13:42:45 [error]: [NOTIFICATION] Rất tiếc, thanh toán đơn #652 của User A thất bại. Lỗi: Lỗi giao dịch
+2026-04-18 13:43:34 [info]: [CONSUMER] Nhận đơn #14
+2026-04-18 13:43:36 [info]: [DATABASE] Lưu lịch sử giao dịch #14
+2026-04-18 13:43:36 [info]: [NOTIFICATION] User A đã đặt đơn #14 thành công! (Mã GD: TXN-1776494616075)

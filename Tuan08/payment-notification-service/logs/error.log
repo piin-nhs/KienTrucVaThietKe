@@ -1,0 +1,22 @@
+2026-04-15 13:38:42 [error]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #278
+2026-04-15 13:38:43 [error]: [NOTIFICATION] 🔕 Thanh toán cho đơn #278 của User A đã thất bại.
+2026-04-15 13:38:46 [error]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #58
+2026-04-15 13:38:47 [error]: [NOTIFICATION] 🔕 Thanh toán cho đơn #58 của User A đã thất bại.
+2026-04-15 13:38:49 [error]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #417
+2026-04-15 13:38:49 [error]: [NOTIFICATION] 🔕 Thanh toán cho đơn #417 của User A đã thất bại.
+2026-04-15 13:52:13 [error]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #876
+2026-04-15 13:52:13 [error]: [NOTIFICATION] 🔕 Thanh toán cho đơn #876 của User A đã thất bại.
+2026-04-15 14:10:39 [error]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #306
+2026-04-15 14:10:39 [error]: [NOTIFICATION] 🔕 Thanh toán cho đơn #306 của User A đã thất bại.
+2026-04-15 14:10:48 [error]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #192
+2026-04-15 14:10:48 [error]: [NOTIFICATION] 🔕 Thanh toán cho đơn #192 của User A đã thất bại.
+2026-04-15 14:28:02 [error]: [NOTIFICATION] 🔕 Rất tiếc, thanh toán đơn #47 của User A thất bại. Lỗi: Ngân hàng từ chối giao dịch
+2026-04-15 14:28:32 [error]: [PAYMENT] ❌ Thanh toán THẤT BẠI cho Booking #42
+2026-04-15 14:28:32 [error]: [NOTIFICATION] 🔕 Rất tiếc, thanh toán đơn #42 của User A thất bại. Lỗi: Ngân hàng từ chối giao dịch
+2026-04-18 13:22:19 [error]: Không thể khởi động hệ thống
+2026-04-18 13:22:30 [error]: [NOTIFICATION] Rất tiếc, thanh toán đơn #481 của User A thất bại. Lỗi: Ngân hàng từ chối giao dịch
+2026-04-18 13:22:30 [error]: [NOTIFICATION] Rất tiếc, thanh toán đơn #481 của User A thất bại. Lỗi: Ngân hàng từ chối giao dịch
+2026-04-18 13:25:54 [error]: [NOTIFICATION] Rất tiếc, thanh toán đơn #201 của User A thất bại. Lỗi: Lỗi giao dịch
+2026-04-18 13:38:15 [error]: Không thể khởi động hệ thống
+2026-04-18 13:38:19 [error]: Không thể khởi động hệ thống
+2026-04-18 13:42:45 [error]: [NOTIFICATION] Rất tiếc, thanh toán đơn #652 của User A thất bại. Lỗi: Lỗi giao dịch
