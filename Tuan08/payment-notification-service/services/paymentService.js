@@ -2,7 +2,9 @@ const Payment = require("../models/paymentModel");
 const logger = require("../config/logger");
 
 class PaymentService {
-  async processPayment(bookingData) {
+  async processPayment(payload) {
+    const bookingData = payload.data || payload;
+
     const isSuccess = Math.random() > 0.3;
     const paymentStatus = isSuccess ? "SUCCESS" : "FAILED";
     const transId = isSuccess ? `TXN-${Date.now()}` : null;

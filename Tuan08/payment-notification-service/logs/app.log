@@ -416,3 +416,58 @@
 2026-04-18 13:43:34 [info]: [CONSUMER] Nhận đơn #14
 2026-04-18 13:43:36 [info]: [DATABASE] Lưu lịch sử giao dịch #14
 2026-04-18 13:43:36 [info]: [NOTIFICATION] User A đã đặt đơn #14 thành công! (Mã GD: TXN-1776494616075)
+2026-04-20 14:00:00 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:00:01 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:00:02 [info]: Server đang chạy tại http://localhost:8084
+2026-04-20 14:09:28 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:09:29 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:09:29 [info]: Server đang chạy tại http://localhost:8084
+2026-04-20 14:09:36 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:09:37 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:09:38 [info]: Server đang chạy tại http://localhost:8084
+2026-04-20 14:24:59 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:25:00 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:25:01 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:25:03 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:25:04 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:25:05 [info]: Server đang chạy tại http://localhost:8084
+2026-04-20 14:25:07 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:25:08 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:25:09 [info]: Server đang chạy tại http://localhost:8084
+2026-04-20 14:25:21 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:25:23 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:25:25 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:25:26 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:25:26 [info]: Server đang chạy tại http://localhost:8084
+2026-04-20 14:25:30 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:25:31 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:25:32 [info]: Server đang chạy tại http://localhost:8084
+2026-04-20 14:35:02 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:35:03 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:35:13 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:35:14 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:37:08 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:37:09 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:37:10 [info]: Server đang chạy tại http://localhost:8084
+2026-04-20 14:37:15 [info]: [CONSUMER] Nhận đơn #69e5d7ab4820663781c97fd7
+2026-04-20 14:37:17 [info]: [DATABASE] Lưu lịch sử giao dịch #69e5d7ab4820663781c97fd7
+2026-04-20 14:37:17 [info]: [NOTIFICATION] User 69e5ce58db99f4821674e699 đã đặt đơn #69e5d7ab4820663781c97fd7 thành công! (Mã GD: TXN-1776670637307)
+2026-04-20 14:37:45 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:37:47 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:37:49 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:37:49 [info]: Server đang chạy tại http://localhost:8084
+2026-04-20 14:37:51 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:37:53 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:37:54 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:37:55 [info]: Server đang chạy tại http://localhost:8084
+2026-04-20 14:37:59 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:38:00 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:38:02 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:38:03 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:38:04 [info]: Server đang chạy tại http://localhost:8084
+2026-04-20 14:38:19 [info]: MongoDB Atlas đã kết nối thành công
+2026-04-20 14:38:20 [info]: RabbitMQ Cloud đã kết nối thành công
+2026-04-20 14:38:21 [info]: Server đang chạy tại http://localhost:8084
+2026-04-20 14:38:38 [info]: [CONSUMER] Nhận đơn #69e5d7fea62eb67ca812eef4
+2026-04-20 14:38:40 [info]: [DATABASE] Lưu lịch sử giao dịch #69e5d7fea62eb67ca812eef4
+2026-04-20 14:38:40 [info]: [NOTIFICATION] User 69e5ce58db99f4821674e699 đã đặt đơn #69e5d7fea62eb67ca812eef4 thành công! (Mã GD: TXN-1776670720656)
